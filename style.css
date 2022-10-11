@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url(IBM_Plex_Sans/IBMPlexSans-Light.ttf);
+}
+
+* {
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: stretch;
+  background-color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  gap: 10px;
+  margin: 0px;
+  padding: 10px;
+}
+
+ul.list-content {
+  padding-left: 10px;
+}
+
+li {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  gap: 10px;
+  padding: 10px;
+}
+
+li#list-template {
+  display: none;
+}
+
+li.list {
+  border: 3px dashed rgb(244, 180, 0);
+  border-radius: 8px;
+}
+
+li.list-item {
+  margin: 0px;
+  padding: 0px;
+}
+
+li.list-item > span::before {
+  content: "\2212";
+  margin-right: 0.4em;
+}
+
+body.deleting li.list:hover:not(:has(li.list:hover)) {
+  background-color: salmon;
+}
+
+span.list-title {
+  font-size: 125%;
+  text-decoration: underline;
+}
+
+button {
+  align-self: start;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  padding: 5px 10px 5px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(66, 133, 244);
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  filter: brightness(150%);
+}

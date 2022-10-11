@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>TODO</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <ul id="lists">
+      <li id="list-template" class="list">
+        <span class="list-title" contenteditable="true">New List</span>
+        <ul class="list-content">
+          <li id="list-item-template" class="list-item">
+            <span contenteditable="true">New Item</span>
+          </li>
+          <button class="add-list-item">
+            <span class="material-icons">add</span>
+            Add Item
+          </button>
+          <button class="add-list">
+            <span class="material-icons">add</span>
+            Add List
+          </button>
+        </ul>
+      </li>
+      <button class="add-list toplevel">
+        <span class="material-icons">add</span>
+        Add List
+      </button>
+    </ul>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
