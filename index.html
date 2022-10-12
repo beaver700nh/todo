@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
+    <span style="display: none">__main__</span>
     <ul id="lists">
       <li id="list-template" class="list">
         <span class="list-title" contenteditable="true">New List</span>
@@ -30,6 +31,20 @@
         Add List
       </button>
     </ul>
+    <div id="buttons">
+      <button id="save">
+        <span class="material-icons">file_download</span>
+        Save
+      </button>
+      <button id="load">
+        <span class="material-icons">file_upload</span>
+        Load
+      </button>
+    </div>
+    <div id="form">
+      <label for="fname">Save as:</label>
+      <input type="text" id="fname" />
+    </div>
 
     <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
