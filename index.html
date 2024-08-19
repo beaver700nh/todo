@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
-    <span style="display: none">__main__</span>
-    <ul id="lists">
+    <!-- Template -->
+    <div id="templates">
       <li id="list-template" class="list">
-        <span class="list-title" contenteditable="true">New List</span>
-        <ul class="list-content">
+        <span id="list-title-template" class="list-title" contenteditable="true">New List</span>
+        <ul id="list-content-template" class="list-content">
           <li id="list-item-template" class="list-item">
             <span contenteditable="true">New Item</span>
           </li>
@@ -26,11 +26,24 @@
           </button>
         </ul>
       </li>
-      <button class="add-list toplevel">
+      <button id="button-add-list-toplevel-template" class="add-list toplevel">
         <span class="material-icons">add</span>
         Add List
       </button>
-    </ul>
+    </div>
+
+    <!-- Main list -->
+    <div id="main">
+      <span style="display: none;">__main__</span>
+      <ul id="lists">
+        <button class="add-list toplevel">
+          <span class="material-icons">add</span>
+          Add List
+        </button>
+      </ul>
+    </div>
+
+    <!-- Other -->
     <div id="buttons">
       <button id="save">
         <span class="material-icons">file_download</span>
@@ -45,6 +58,7 @@
       <label for="fname">Save as:</label>
       <input type="text" id="fname" />
     </div>
+    <input type="file" id="fload" style="display: none;" />
 
     <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
